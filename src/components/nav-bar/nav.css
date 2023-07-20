@@ -1,0 +1,55 @@
+.nav-bar {
+    position: sticky;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display: flex;
+    flex-basis: row;
+    background-color: #161616;
+    color: #EEEEEE;
+ 
+
+    
+    
+}
+
+
+
+.links {
+    flex-grow:  1;
+    display: flex;
+    justify-content: flex-end;
+
+    border:  1px solid orange;
+    
+}
+
+.nav-link-active {
+    background-color: red;
+}
+.nav-link {
+    padding:5px;
+    width:200px;
+    text-align: center;
+}
+.nameContainer {
+    width:500px;
+    height: 50px;
+    transform: translate(-100px, 2px) skewX(-40deg);
+    background-color: #161616;
+    border:1px solid #000;
+    box-shadow:inset -3px  -3px 30px rgba(0, 0, 0, 0.583); /* Adjust the values for the shadow effect */
+    padding-left:100px;
+    
+    
+}
+.name {
+    text-align: left;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 10px;
+    padding-right:10px;
+    transform: skewX(40deg);
+}

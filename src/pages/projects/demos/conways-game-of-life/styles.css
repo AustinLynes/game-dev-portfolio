@@ -1,0 +1,33 @@
+.tile-grid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(64, 30px); /* Adjust column size as needed */
+  grid-template-rows: repeat(64, 30px); /* Adjust row size as needed */
+  gap: 2px; /* Adjust gap size as needed */
+  transform: scale(0.3);
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  background-color: #080808;
+  border-radius: 8px;
+  opacity: 0.3;
+
+  /* Add 3D perspective styles */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); 
+}
+
+.tile.alive {
+  opacity: 1;
+
+  /* Neon light effect */
+  background-color: #FFA500; /* Light orange */
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.8), 0 0 20px rgba(255, 165, 0, 0.6),
+    0 0 30px rgba(255, 165, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+}
+
+.tile.dead {
+  /* Dead cells are almost transparent */
+  border:1px solid white;
+}
