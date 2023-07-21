@@ -1,12 +1,18 @@
 .skill-tree {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    display: flex;
+    flex-flow: row wrap;
   }
   
-  .skill-tree ul {
+  .skill-card {
+    margin: 0 auto;
+    width: 30%;
     padding-left: 20px;
     list-style-type: none;
     position: relative;
+    background-color: #080808;
+
   }
   
   .skill-tree li {
@@ -18,14 +24,5 @@
   .skill-tree li:last-child {
     margin-bottom: 0;
   }
-  
-  .skill-tree li:before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -18px;
-    width: 0;
-    height: 10px;
-    border-left: 2px solid #ccc;
-  }
+
   

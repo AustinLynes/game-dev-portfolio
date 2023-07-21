@@ -8,41 +8,30 @@ import Navbar from "./components/nav-bar"
 
 import HomePage from "./pages/home"
 import ProjectsPage from "./pages/projects"
-import ContactPage from './pages/home/contact';
-import SkillsPage from './pages/home/skills';
-import AboutPage from './pages/home/about';
 
 import NotFound  from './components/errors/notfound';
+import AboutPage from './pages/home/about';
 
 function Content(){
   return (
     <Router>
-      <Routes>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/skills" component={SkillsPage} />
-        <Route path="/projects" component={ProjectsPage} />
-        <Route path="/contact" component={ContactPage} />
-        <Route path="/*" component={NotFound} />
-      </Routes>
       <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/projects" element={<ProjectsPage/>} />
+        <Route path="/about-me" element={<AboutPage/>} />
+        <Route path="/*" element={<NotFound/>} />
+      </Routes>
     </Router>
   )
 }
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
-  
-  useEffect(()=>{
-    setTimeout(()=>{setIsLoading(false)}, 3000);
-  }, []);
 
   return (
     <div className="App">
-      
       <Content/>
-      {/* { isLoading ? < null} */}
-
     </div>
   );
 }

@@ -7,7 +7,6 @@ import AboutPage from "./about"
 import SkillsPage from "./skills"
 import ContactPage from "./contact"
 
-
 function HomePage (){
     return (
     <div className="home-page">
@@ -15,10 +14,6 @@ function HomePage (){
         <source src={testVideo} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
-        <AboutPage/>
-        <SkillsPage/>
-        <ContactPage/>
-
     </div>
     )
 

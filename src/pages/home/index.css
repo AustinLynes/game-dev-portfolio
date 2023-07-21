@@ -1,16 +1,15 @@
 .home-page {
-    overflow-x: hidden;
+    overflow: hidden;
     display: flex;
     flex-flow: column;
-
-
+    width:100%;
     background-color: #161616;
     color:aliceblue;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
 }
+
 video {
-    
     background-color: black;
     overflow: hidden;
     width:100%;
